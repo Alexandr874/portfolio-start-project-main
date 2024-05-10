@@ -3,7 +3,9 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {HeaderMenu} from "../header/headerMenu/HeaderMenu";
+
+
 
 export const Header = () => {
     const hederMenuItem = ['Home', 'Skills', 'Works', 'Testimony', 'Contact'];
