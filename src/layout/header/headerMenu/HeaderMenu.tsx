@@ -37,6 +37,10 @@ const StyledHeaderMenu = styled.div`;
        
     }
     
+    @media ${theme.media.tablet} {
+        display: none;
+        
+    }
 `;
 
 
