@@ -1,66 +1,24 @@
 import React from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
-import styled from "styled-components";
 import {Button} from "../../../components/Button";
 import { Container } from '../../../components/Container';
-import {theme} from "../../../styles/Theme";
+import {S} from "./Contact_Styles";
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
     return (
-        <StyledContact>
+        <S.Contact>
             <Container>
                 <SectionTitle>Contact</SectionTitle>
-                <StyledForm>
-                    <Field placeholder={"Имя"}/>
-                    <Field placeholder={"Тема"}/>
-                    <Field as={"textarea"} placeholder={"Сообщение"}/>
+                <S.Form>
+                    <S.Field placeholder={"Имя"}/>
+                    <S.Field placeholder={"Тема"}/>
+                    <S.Field as={"textarea"} placeholder={"Сообщение"}/>
                     <Button type={"submit"}>Send message</Button>
-                </StyledForm>
+                </S.Form>
             </Container>
-        </StyledContact>
+        </S.Contact>
     );
 };
 
-const StyledContact = styled.section`
-   
-`;
-
-const StyledForm = styled.form`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 540px; 
-    width: 100%;
-    gap: 16px;
-    
-    textarea{
-        resize: none;
-        height: 155px;
-    }
-`;
-
-const Field = styled.input`
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid ${theme.colors.borderColor}; 
-    background-color: ${theme.colors.secondaryBg};
-    padding: 7px 15px;
-
-    color: ${theme.colors.font};
-    font-family: Poppins, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.05em; 
-   
-    &::placeholder {
-        color: ${theme.colors.placeholderColor};
-        text-transform: capitalize;
-    }
-    
-    &: focus-visible {
-        outline: 1px solid ${theme.colors.borderColor};
-    }
-`;
 
 
