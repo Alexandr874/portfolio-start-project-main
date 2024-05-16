@@ -25,7 +25,6 @@ const MainTitle = styled.h1`
     Fmin: 20,
     Fmax: 27
 })}
-    
 `;
 
 const Name = styled.h2`
@@ -63,6 +62,7 @@ const Name = styled.h2`
 
 const PhotoWrapper = styled.div`
     position: relative;
+    margin-top: 50px;
     z-index: 0;
     
     
@@ -85,6 +85,9 @@ const PhotoWrapper = styled.div`
             left: 20px;
         }
     }
+    @media ${theme.media.tablet} {
+        margin-top: 65px;
+    }
 
     @media ${theme.media.mobile} {
         margin-top: 65px;
@@ -96,6 +99,7 @@ const Photo = styled.img`
     height: 430px;
     object-fit: cover;
     margin-right: 20px;
+    
     
     @media ${theme.media.mobile} {
         width: 310px;  
