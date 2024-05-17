@@ -3,6 +3,7 @@ import photo from '../../../assets/images/foto.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 import {S}  from "../main/Main_Styles";
 
 
@@ -26,9 +27,11 @@ export const Main: React.FC = () => {
                             />
                         </S.MainTitle>
                     </div>
-                    <S.PhotoWrapper>
-                        <S.Photo src={photo}/>
-                    </S.PhotoWrapper>
+                    <Tilt>
+                        <S.PhotoWrapper>
+                            <S.Photo src={photo}/>
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </S.Main>
