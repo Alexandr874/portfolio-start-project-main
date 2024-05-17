@@ -6,6 +6,9 @@ const Slider = styled.div`
     flex-direction: column;
     align-items: center;
     max-width: 500px;
+    width: 100%;
+    cursor: pointer;
+   
 `;
 const Slide = styled.div`
     text-align: center;
