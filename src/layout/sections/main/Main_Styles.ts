@@ -25,6 +25,10 @@ const MainTitle = styled.h1`
     Fmin: 20,
     Fmax: 27
 })}
+    
+    p {
+        display: none;
+    }
 `;
 
 const Name = styled.h2`
