@@ -9,7 +9,7 @@ import {S}  from "../main/Main_Styles";
 
 export const Main: React.FC = () => {
     return (
-        <S.Main>
+        <S.Main id={'home'}>
             <Container>
                 <FlexWrapper justifyContent={'space-around'} alignItems={'center'} wrap={'wrap'}>
                     <div>

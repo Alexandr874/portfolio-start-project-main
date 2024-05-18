@@ -11,7 +11,7 @@ import {S} from "./Header_Styles";
 
 
 export const Header: React.FC = () => {
-    const hederMenuItem = ['Home', 'Skills', 'Works', 'Testimony', 'Contact'];
+
     const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 768;
 
@@ -27,8 +27,8 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justifyContent={"space-between"} alignItems={"center"}>
                     <Logo />
-                    {width < breakpoint ? <MobileMenu menuItems={hederMenuItem}/>
-                                         : <DesktopMenu menuItems={hederMenuItem}/>}
+                    {width < breakpoint ? <MobileMenu />
+                                         : <DesktopMenu />}
                 </FlexWrapper>
             </Container>
         </S.Header>

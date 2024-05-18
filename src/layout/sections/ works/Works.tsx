@@ -27,7 +27,7 @@ const tabsItems: Array<{status: TabStatusType, title: string}> = [
         title: 'spa',
         status: 'spa'
     }
-]
+];
 
 const worksData = [
     {
@@ -67,7 +67,7 @@ export const Works: React.FC = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={'works'}>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu tabItems={tabsItems}
