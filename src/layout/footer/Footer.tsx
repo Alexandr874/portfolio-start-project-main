@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import { Container } from '../../components/Container';
 import {S} from "../footer/Footer_Styled"
 
+
 const SocialItemsData = [
     {
         iconId: 'instagram'
