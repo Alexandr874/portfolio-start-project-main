@@ -31,6 +31,7 @@ const SocialLinc = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ${theme.animation.transition};
     
     
     border-radius: 50%;

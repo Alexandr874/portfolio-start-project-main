@@ -13,7 +13,8 @@ export const Link = styled.a<{active?: boolean}>`
     
     &:hover {
         &::before {
-            height: 10px; 
+            height: 10px;
+            
         }
         
     }
@@ -22,6 +23,7 @@ export const Link = styled.a<{active?: boolean}>`
         content: '';
         display: inline-block;
         background-color: ${theme.colors.accent};
+        
        
         
         position: absolute;
@@ -29,6 +31,8 @@ export const Link = styled.a<{active?: boolean}>`
         left: 0;
         right: 0;
         z-index: -1;
+        height: 0;
+        transition: ${theme.animation.transition};
         
         ${props => props.active && css<{active?: boolean}>`
             height: 10px;

@@ -16,6 +16,7 @@ import {theme} from "../styles/Theme";
    &::before {
     height: 100%;
     width: 100%;
+  
    }
   }
   
@@ -26,6 +27,7 @@ import {theme} from "../styles/Theme";
     background-color: ${theme.colors.accent};
     height: 10px;
     width: 50%;
+    transition: ${theme.animation.transition};
    
     position: absolute;
     bottom: 0;

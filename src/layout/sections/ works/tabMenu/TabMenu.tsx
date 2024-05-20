@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Link} from "../../../../components/Link";
+import {theme} from "../../../../styles/Theme";
 
 export type TabStatusType = "all" | "landing" | "react" | "spa"
 
@@ -35,6 +36,7 @@ const StyledTabMenu = styled.nav`
         max-width: 352px;
         width: 100%;
         margin: 0 auto 40px;
+        
     }
 `;
 
